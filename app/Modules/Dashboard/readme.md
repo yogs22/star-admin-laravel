@@ -1,0 +1,1 @@
+php artisan vendor:publish --provider=App\Modules\Dashboard\Providers\DashboardServiceProvider
