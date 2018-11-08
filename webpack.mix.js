@@ -20,6 +20,7 @@ mix.js('resources/js/app.js', 'public/js')
 mix.scripts([
     'resources/js/dashboard/off-canvas.js',
     'resources/js/dashboard/misc.js',
+    'resources/js/dashboard/chart.js',
     'resources/js/dashboard/dashboard.js'
 ], 'public/js/dashboard.js');
 
