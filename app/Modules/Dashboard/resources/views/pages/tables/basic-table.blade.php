@@ -174,7 +174,7 @@
                             <tbody>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-1.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-1.png" alt="image" />
                                 </td>
                                 <td>
                                     Herman Beck
@@ -193,7 +193,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-2.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-2.png" alt="image" />
                                 </td>
                                 <td>
                                     Messsy Adam
@@ -212,7 +212,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-3.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-3.png" alt="image" />
                                 </td>
                                 <td>
                                     John Richards
@@ -231,7 +231,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-4.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-4.png" alt="image" />
                                 </td>
                                 <td>
                                     Peter Meggik
@@ -250,7 +250,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-1.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-1.png" alt="image" />
                                 </td>
                                 <td>
                                     Edward
@@ -269,7 +269,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-2.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-2.png" alt="image" />
                                 </td>
                                 <td>
                                     John Doe
@@ -288,7 +288,7 @@
                             </tr>
                             <tr>
                                 <td class="py-1">
-                                    <img src="../../images/faces-clipart/pic-3.png" alt="image" />
+                                    <img src="/images/faces-clipart/pic-3.png" alt="image" />
                                 </td>
                                 <td>
                                     Henry Tom
