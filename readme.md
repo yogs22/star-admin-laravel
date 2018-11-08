@@ -7,7 +7,7 @@
 
 
 
-[![Laravel Dashboard](screenshot.jpg)](https://http://star-admin.crosstech.pl/)
+[![Laravel Dashboard](screenshot.jpg)](https://star-admin.crosstech.pl/)
 
 ## Credits
  - [BootstrapDash](https://www.bootstrapdash.com/)
