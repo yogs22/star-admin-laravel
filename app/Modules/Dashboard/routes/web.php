@@ -1,6 +1,9 @@
 <?php
 
 
-Route::get('/', 'DashboardController@index')->name('dashboard');
-Route::get('/pages/{dir}/{page}', 'DashboardController@page')->name('dashboard.page');
+
+Route::group(['middleware' => ['web','auth','verified']], function (\Illuminate\Routing\Router $router) {
+    $router->get('/', 'DashboardController@index')->name('dashboard');
+    $router->get('/pages/{dir}/{page}', 'DashboardController@page')->name('dashboard.page');
+});
 
