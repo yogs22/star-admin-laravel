@@ -27,4 +27,9 @@ class User extends Authenticatable implements MustVerifyEmail
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function getAvatarAttribute()
+    {
+        return 'https://www.gravatar.com/avatar/'.md5( $this->getAttribute('email') );
+    }
 }
