@@ -21,7 +21,7 @@
       } else {
 
         //for other url
-        if ($this.attr('href').indexOf(current) !== -1 && $this.attr('href').indexOf(current) !== 22) {
+        if ($this.attr('href').indexOf(current) !== -1 && $this.attr('href').indexOf(current) !== location.origin.length + 1) {
           $(this).parents('.nav-item').last().addClass('active');
           if ($(this).parents('.sub-menu').length) {
             $(this).closest('.collapse').addClass('show');
