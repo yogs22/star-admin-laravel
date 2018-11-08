@@ -22,7 +22,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('E-Mail Address') }}" name="email" value="{{ old('email', isset($name) ? $name : null) }}" required>
+                                    <input type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('E-Mail Address') }}" name="email" value="{{ old('email', isset($email) ? $email : null) }}" required>
                                     <div class="input-group-append">
                                       <span class="input-group-text">
                                         <i class="mdi mdi-check-circle-outline"></i>
