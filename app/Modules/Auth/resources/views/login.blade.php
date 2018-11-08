@@ -57,9 +57,9 @@
                                 </button>
                             </div>
                             <div class="form-group">
-                                <button class="btn btn-block g-login">
+                                <a class="btn btn-block g-login" href="{{ route('social.login',['facebook']) }}">
                                     <i class="fa fa-facebook"></i> {{ __('Log in with Facebook') }}
-                                </button>
+                                </a>
                             </div>
                             <div class="text-block text-center my-3">
                                 <span class="text-small font-weight-semibold">{{ __('Not a member ?') }}</span>

@@ -11,7 +11,7 @@
                             @csrf
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input type="text" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" name="name" value="{{ old('name') }}"
+                                    <input type="text" class="form-control {{ $errors->has('name') ? ' is-invalid' : '' }}" placeholder="{{ __('Name') }}" name="name" value="{{ old('name', isset($name) ? $name : null) }}"
                                            required>
                                     <div class="input-group-append">
                                       <span class="input-group-text">
@@ -22,7 +22,7 @@
                             </div>
                             <div class="form-group">
                                 <div class="input-group">
-                                    <input type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('E-Mail Address') }}" name="email" required>
+                                    <input type="email" class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" placeholder="{{ __('E-Mail Address') }}" name="email" value="{{ old('email', isset($name) ? $name : null) }}" required>
                                     <div class="input-group-append">
                                       <span class="input-group-text">
                                         <i class="mdi mdi-check-circle-outline"></i>
