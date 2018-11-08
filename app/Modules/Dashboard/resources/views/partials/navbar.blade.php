@@ -136,8 +136,8 @@
             </li>
             <li class="nav-item dropdown d-none d-xl-inline-block">
                 <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
-                    <span class="profile-text">Hello, Richard V.Welsh !</span>
-                    <img class="img-xs rounded-circle" src="/images/faces/face1.jpg" alt="Profile image">
+                    <span class="profile-text">{!! $user->getAttribute('name') !!}</span>
+                    <img class="img-xs rounded-circle" src="{!! $user->getAttribute('avatar') !!}" alt="{!! $user->getAttribute('name') !!}">
                 </a>
                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
                     <a class="dropdown-item p-0">
