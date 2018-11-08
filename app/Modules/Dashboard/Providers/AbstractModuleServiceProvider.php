@@ -19,6 +19,7 @@ abstract class AbstractModuleServiceProvider extends ServiceProvider
     {
         $this->registerViews();
         $this->registerWebRoutes();
+        $this->bootModule();
     }
 
     /**
@@ -26,7 +27,7 @@ abstract class AbstractModuleServiceProvider extends ServiceProvider
      *
      * @return void
      */
-    public function registerViews(): void
+    protected function registerViews(): void
     {
         $sourcePath = app_path('Modules/'.ucfirst($this->name).'/resources/views');
 
@@ -60,6 +61,11 @@ abstract class AbstractModuleServiceProvider extends ServiceProvider
                 ->prefix($this->name)
                 ->group($webRoutes);
         }
+    }
+
+    public function bootModule()
+    {
+        // boot here whatever you want
     }
 
 
