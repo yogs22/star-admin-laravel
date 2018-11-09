@@ -1,0 +1,31 @@
+os:
+  - linux
+
+language: php
+
+php:
+  - '7.2'
+  
+before_script:
+  - composer self-update
+  - composer install --no-interaction
+  - cp .env.example .env
+  - phpenv rehash
+  - php artisan key:generate
+  - php artisan migrate
+  - nvm install 7.7.1
+  - npm install npm@latest -g
+  - npm install
+
+before_install:
+  - mysql -e 'CREATE DATABASE homestead;'
+  
+script:
+  - vendor/bin/phpunit --coverage-text
+  - npm run prod
+
+services:
+  - mysql
+
+notifications:
+  email: false
