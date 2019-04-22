@@ -2,9 +2,9 @@
 
 namespace App\Modules\Auth\Http\Controllers;
 
+use Illuminate\Foundation\Auth\VerifiesEmails;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
-use Illuminate\Foundation\Auth\VerifiesEmails;
 
 class VerificationController extends Controller
 {
@@ -43,7 +43,8 @@ class VerificationController extends Controller
     /**
      * Show the email verification notice.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
+     *
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request)

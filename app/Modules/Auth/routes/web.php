@@ -25,7 +25,4 @@ Route::group(['middleware' => 'web'], function (\Illuminate\Routing\Router $rout
     // Social Login
     $router->get('/login/{social}', 'SocialLoginController@redirectToProvider')->where('social', 'twitter|facebook|linkedin|google|github|bitbucket')->name('social.login');
     $router->get('/login/{social}/callback', 'SocialLoginController@handleProviderCallback')->where('social', 'twitter|facebook|linkedin|google|github|bitbucket');
-
 });
-
-
