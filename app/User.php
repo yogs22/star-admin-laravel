@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
@@ -30,6 +30,6 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function getAvatarAttribute()
     {
-        return 'https://www.gravatar.com/avatar/'.md5( $this->getAttribute('email') );
+        return 'https://www.gravatar.com/avatar/'.md5($this->getAttribute('email'));
     }
 }

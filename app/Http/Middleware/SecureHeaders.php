@@ -13,6 +13,7 @@ class SecureHeaders
         'X-Powered-By',
         'Server',
     ];
+
     public function handle($request, Closure $next)
     {
         $this->removeUnwantedHeaders($this->unwantedHeaderList);
@@ -23,11 +24,14 @@ class SecureHeaders
         $response->headers->set('X-Frame-Options', 'DENY');
         $response->headers->set('Strict-Transport-Security', 'max-age:31536000; includeSubDomains');
         $response->headers->set('Content-Security-Policy', "style-src 'self' 'unsafe-inline' *.googleapis.com");
+
         return $response;
     }
+
     private function removeUnwantedHeaders($headerList)
     {
-        foreach ($headerList as $header)
+        foreach ($headerList as $header) {
             header_remove($header);
+        }
     }
 }
